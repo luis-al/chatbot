@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Embed Example</title>
+    <style>
+        .chat-container {
+            width: 400px;
+            height: 600px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        /* Example responsive layout */
+        @media (max-width: 490px) {
+            .chat-container {
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+                border: none;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Example of embedding in a div -->
+    <div class="chat-container">
+        <iframe 
+            src="index.html" 
+            frameborder="0" 
+            style="width: 100%; height: 100%; border: none;"
+            title="Chat Almas Libres"
+        ></iframe>
+    </div>
+
+    <!-- Example of embedding script -->
+    <script>
+        // You can also embed dynamically using JavaScript
+        function embedChat(containerId) {
+            const container = document.getElementById(containerId);
+            const iframe = document.createElement('iframe');
+            iframe.src = 'index.html';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.border = 'none';
+            iframe.title = 'Chat Almas Libres';
+            container.appendChild(iframe);
+        }
+    </script>
+</body>
+</html>

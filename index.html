@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  </head>
+  <body>
+    <button class="chatbot-toggler">
+      <box-icon name='message-dots'></box-icon>
+      <box-icon name='x'></box-icon>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Almas libres HandMade</h2>
+        <p class="subt">Tienda Online <br>Badalona-Barcelona</p>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hola 👋🏻</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Ingresa un mensaje..." required></textarea>
+        <span id="send-btn" class="material-symbols-outlined">send</span>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
