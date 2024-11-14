@@ -26,7 +26,7 @@ const generateResponse = async (incomingChatLi) => {
 
   try {
     const response = await fetch(
-      "https://web-flowise.utwq30.easypanel.host/api/v1/prediction/dcf0859b-aff5-4fed-9436-2acc5f9cccd6",
+      "link script aqui",
       {
         method: "POST",
         headers: {
